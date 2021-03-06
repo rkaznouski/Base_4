@@ -97,6 +97,10 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
 
 # Chutzpah Test files
 _Chutzpah*
@@ -238,6 +242,8 @@ ClientBin/
 *.jfm
 *.pfx
 *.publishsettings
+*.gitignore
+*.gitattributes
 orleans.codegen.cs
 
 # Including strong name files can present a security risk
