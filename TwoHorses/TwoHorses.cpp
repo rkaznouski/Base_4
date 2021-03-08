@@ -128,7 +128,7 @@ void searchChessMoves(struct coordinate coord, struct coordinate arr[]) {
 void printChessBoard(struct coordinate chessBoard[]) {
 	int i = 0, j = 0;
 
-	while(i < N){
+	while(i < N) {
 		while (j < LENGTHCHESSBOARD) {
 			cout << "|| " << chessBoard[i].X << " . " << chessBoard[i].Y << " ";
 			j++;
