@@ -2,8 +2,6 @@
 
 ### This public repository contains console applications:
 
-#
-#
 #### [ 02.03.2021 ]
 - [Mutants](https://github.com/rkaznouski/Base_4/blob/master/Mutants/Mutants.cpp) - calculates in how many days the utilities will destroy all mutants.
 - [Two Horses](https://github.com/rkaznouski/Base_4/blob/master/TwoHorses/TwoHorses.cpp) - user enters four numbers. The first pair of numbers is the coordinate of the first knight. The second pair of numbers is the coordinates of the second knight. App finds out if they hit each other.
