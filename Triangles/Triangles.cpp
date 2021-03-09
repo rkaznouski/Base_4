@@ -14,7 +14,7 @@ int getMinSide(int firstSide, int secondSide, int thirdSide);
 int getMiddleSide(int firstSide, int secondSide, int thirdSide);
 
 int main() {
-    char firstSide[DIGITS], secondSide[DIGITS], thirdSide[DIGITS];
+    char firstSide[DIGITS] = { 0 }, secondSide[DIGITS] = { 0 }, thirdSide[DIGITS] = { 0 };
     int numbFirstSide = 0, numbSecondSide = 0, numbThirdSide = 0;
 
     cout << "Hello, user! Enter the three lengths of the sides of the triangle." << endl

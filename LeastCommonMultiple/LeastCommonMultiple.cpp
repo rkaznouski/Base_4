@@ -11,7 +11,7 @@ bool isPrime(int number);
 
 int main()
 {
-    char firstCharNumber[NUMBERLENGTH], secondCharNumber[NUMBERLENGTH];
+    char firstCharNumber[NUMBERLENGTH] = { 0 }, secondCharNumber[NUMBERLENGTH] = { 0 };
     int firstIntNumber, secondIntNumber;
 
     cout << "Hello, user! Let's find the smallest common divisor of two numbers." << endl

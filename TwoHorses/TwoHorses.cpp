@@ -20,9 +20,9 @@ bool matchSearch(struct coordinate firstChessMoves[], struct coordinate secondHo
 void changeColour(int color);
 
 int main() {
-	struct coordinate coordChessBoard[N];
-	struct coordinate firstHorseMoves[HORSEMOVES];
-	struct coordinate secondHorseMoves[HORSEMOVES];
+	struct coordinate coordChessBoard[N] = { 0 };
+	struct coordinate firstHorseMoves[HORSEMOVES] = { 0 };
+	struct coordinate secondHorseMoves[HORSEMOVES] = { 0 };
 	struct coordinate firstCoordinate, secondCoordinate;
 	char firstX, firstY, secondX, secondY;
 	int numbFirstX, numbFirstY, numbSecondX, numbSecondY;

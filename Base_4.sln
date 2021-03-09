@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mutants", "Mutants\Mutants.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FromBinaryToDecimal", "FromBinaryToDecimal\FromBinaryToDecimal.vcxproj", "{74954A8B-B546-4581-B84F-75E206B75165}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstDigit", "FirstDigit\FirstDigit.vcxproj", "{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{74954A8B-B546-4581-B84F-75E206B75165}.Release|x64.Build.0 = Release|x64
 		{74954A8B-B546-4581-B84F-75E206B75165}.Release|x86.ActiveCfg = Release|Win32
 		{74954A8B-B546-4581-B84F-75E206B75165}.Release|x86.Build.0 = Release|Win32
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Debug|x64.ActiveCfg = Debug|x64
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Debug|x64.Build.0 = Debug|x64
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Debug|x86.ActiveCfg = Debug|Win32
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Debug|x86.Build.0 = Debug|Win32
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Release|x64.ActiveCfg = Release|x64
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Release|x64.Build.0 = Release|x64
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Release|x86.ActiveCfg = Release|Win32
+		{BE9FEDAC-7056-432F-A1C3-FAFF239C6685}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
