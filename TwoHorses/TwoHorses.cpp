@@ -22,7 +22,6 @@ void changeColour(int color);
 int main() {
 	struct coordinate coordChessBoard[N] = { 0 };
 	struct coordinate firstHorseMoves[HORSEMOVES] = { 0 };
-	struct coordinate secondHorseMoves[HORSEMOVES] = { 0 };
 	struct coordinate firstCoordinate, secondCoordinate;
 	char firstX, firstY, secondX, secondY;
 	int numbFirstX, numbFirstY, numbSecondX, numbSecondY;
@@ -53,34 +52,29 @@ int main() {
 	cin >> secondY;
 	
 
-	if (isCharactersCorrect(firstX)) {
-		if (isCharactersCorrect(firstY)) {
-			if (isCharactersCorrect(secondX)) {
-				if (isCharactersCorrect(secondY)) {
-					numbFirstX = getNumberFromChar(firstX);
-					numbFirstY = getNumberFromChar(firstY);
-					numbSecondX = getNumberFromChar(secondX);
-					numbSecondY = getNumberFromChar(secondY);
+	if (isCharactersCorrect(firstX) && isCharactersCorrect(firstY) &&
+		isCharactersCorrect(secondX) && isCharactersCorrect(secondY)) {
+		numbFirstX = getNumberFromChar(firstX);
+		numbFirstY = getNumberFromChar(firstY);
+		numbSecondX = getNumberFromChar(secondX);
+		numbSecondY = getNumberFromChar(secondY);
+		
+		firstCoordinate = { numbFirstX, numbFirstY };
+		secondCoordinate = { numbSecondX, numbSecondY };
 
-					firstCoordinate = { numbFirstX, numbFirstY };
-					secondCoordinate = { numbSecondX, numbSecondY };
+		searchChessMoves(firstCoordinate, firstHorseMoves);
 
-					searchChessMoves(firstCoordinate, firstHorseMoves);
-
-					if (matchSearch(firstHorseMoves, secondCoordinate)) {
-						changeColour(10);
-						cout << "Chess pieces beat each other!" << endl;
-						changeColour(15);
-					}
-					else {
-						changeColour(12);
-						cout << "Chess pieces don't beat each other." << endl;
-						changeColour(15);
-					}
-					return 0;
-				}
-			}
+		if (matchSearch(firstHorseMoves, secondCoordinate)) {
+			changeColour(10);
+			cout << endl << "Chess pieces beat each other!" << endl;
+			changeColour(15);
 		}
+		else {
+			changeColour(12);
+			cout << endl << "Chess pieces don't beat each other." << endl;
+			changeColour(15);
+		}
+		return 0;
 	}
 	return 1;
 }
@@ -160,7 +154,7 @@ void createChessBoard(struct coordinate coordChessBoard[]) {
 bool isCharactersCorrect(char arr) {
 	if (arr < '1' or arr > '8') {
 		changeColour(12);
-		cout << "ERROR. Value should be from 1 to 8." << endl;
+		cout << endl << "ERROR. Value should be from 1 to 8." << endl;
 		changeColour(15);
 		return false;
 	}
