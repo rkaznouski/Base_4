@@ -10,7 +10,7 @@ int main() {
     char userNumber[DIGITS] = {0};
     
     cout << "Hello, user! Enter a fractional real number." << endl
-        << " I will find and send the first digit of the fractional part to the output stream." << endl
+        << "I will find and send the first digit of the fractional part to the output stream." << endl
         << "Enter your number [max 8 digits]: " << endl;
     cin.getline(userNumber, DIGITS);
 

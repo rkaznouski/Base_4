@@ -8,16 +8,16 @@ void changeColour(int colour);
 bool isCharactersCorrect(char arr[]);
 int getNumberFromChar(char arr[]);
 int getFactor(int degree);
-double getQuantityReproduction(double countZombies, double percentReproduction);
-int getDaysToDestroy(int mutantReproduction, int mutantDestruction);
+int getQuantityReproduction(double countZombies, double percentReproduction);
+int getDaysToDestroy(int intQuantityMutants, int mutantReproduction, int mutantDestruction);
 
 int main() {
 	char quantityMutants[N] = { 0 }, percentReproduction[N] = { 0 }, quantityDestruction[N] = { 0 };
 	int daysToFullDestroy = 0, intQuantityMutants = 0, intPercentReproduction = 0, intQuantityDestruction = 0;
 
 	changeColour(12);
-	cout << "[ _ _ _ _ BREAK NEWS _ _ _ _ ]" << endl <<
-		"Minsk was attacked by MUTANTS!!!" << endl;
+	cout << "[ _ _ _ _ BREAK NEWS _ _ _ _ ]" << endl
+		<< "Minsk was attacked by MUTANTS!!!" << endl;
 	changeColour(15);
 
 	cout << endl << "How many mutants have attacked Minsk?" << endl;
@@ -31,14 +31,14 @@ int main() {
 			intPercentReproduction = getNumberFromChar(percentReproduction);
 
 			cout << "With each day the increase will be (mutants): " << endl
-				<< (int)getQuantityReproduction(intQuantityMutants, intPercentReproduction) << endl;
+				<< getQuantityReproduction(intQuantityMutants, intPercentReproduction) << endl;
 
 			cout << "How many mutants are destroyed by utilities every day?" << endl;
 			cin.getline(quantityDestruction, N);
 			if (isCharactersCorrect(quantityDestruction)) {
 				intQuantityDestruction = getNumberFromChar(quantityDestruction);
 
-				if ((int)getQuantityReproduction(intQuantityMutants, intPercentReproduction) > intQuantityDestruction) {
+				if (getQuantityReproduction(intQuantityMutants, intPercentReproduction) > intQuantityDestruction) {
 					changeColour(12);
 					cout << endl << "This is a catastrophe! We will not be able to resist so many mutants!" << endl;
 					changeColour(15);
@@ -46,7 +46,9 @@ int main() {
 				else {
 					changeColour(10);
 					cout << endl << "All mutants will be destroyed after a number of days: " <<
-						getDaysToDestroy(getQuantityReproduction(intQuantityMutants, intPercentReproduction), intQuantityDestruction) << endl;
+						getDaysToDestroy(intQuantityMutants,
+							getQuantityReproduction(intQuantityMutants, intPercentReproduction),
+							intQuantityDestruction) << endl;
 					changeColour(15);
 				}
 				return 0;
@@ -56,8 +58,8 @@ int main() {
 	return 1;
 }
 
-int getDaysToDestroy(int mutantReproduction, int mutantDestruction) {
-	return mutantReproduction / mutantDestruction + 1;
+int getDaysToDestroy(int intQuantityMutants, int mutantReproduction, int mutantDestruction) {
+	return intQuantityMutants / (mutantDestruction - mutantReproduction);
 }
 
 bool isCharactersCorrect(char arr[]) {
@@ -102,7 +104,7 @@ int getFactor(int degree) {
 	return factor;
 }
 
-double getQuantityReproduction(double countZombies, double percentReproduction) {
+int getQuantityReproduction(double countZombies, double percentReproduction) {
 	return countZombies * (percentReproduction / 100);
 }
 
