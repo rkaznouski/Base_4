@@ -2,7 +2,7 @@
 
 ## This public repository contains console applications:
 
-- [First Digit](https://github.com/rkaznouski/Base_4/blob/master/FirstDigit/FirstDigit.cpp) - finds and sends the first digit of the fractional part to the output stream.
+- [First Digit](https://github.com/rkaznouski/Base_4/blob/master/FirstDigit/FirstDigit.cpp) - finds and sends the first digit of the fractional part of number to the output stream.
 - [From Binary To Decimal](https://github.com/rkaznouski/Base_4/blob/master/FromBinaryToDecimal/FromBinaryToDecimal.cpp) - converts the number from binary to decimal.
 - [Guess Number](https://github.com/rkaznouski/Base_4/blob/master/GuessNumber/GuessNumber.cpp) - chooses a number from 1 to 1000 and user tries to guess it. User receives hints about number.
 - [Least Common Multiple](https://github.com/rkaznouski/Base_4/blob/master/LeastCommonMultiple/LeastCommonMultiple.cpp) - finds the smallest common divisor of two numbers.
