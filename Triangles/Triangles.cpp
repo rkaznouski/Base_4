@@ -28,21 +28,17 @@ int main() {
     cout << "Enter the third length of the side: [max 5 digits]" << endl;
     cin.getline(thirdSide, DIGITS);
 
-    if (isCharactersCorrect(firstSide)) {
-        if (isCharactersCorrect(secondSide)) {
-            if (isCharactersCorrect(thirdSide)) {
-                numbFirstSide = getNumberFromChar(firstSide);
-                numbSecondSide = getNumberFromChar(secondSide);
-                numbThirdSide = getNumberFromChar(thirdSide);
+    if (isCharactersCorrect(firstSide) && isCharactersCorrect(secondSide) && isCharactersCorrect(thirdSide)) {
+        numbFirstSide = getNumberFromChar(firstSide);
+        numbSecondSide = getNumberFromChar(secondSide);
+        numbThirdSide = getNumberFromChar(thirdSide);
 
-                if (triangleExist(numbFirstSide, numbSecondSide, numbThirdSide)) {
-                    printTypeTriangle(numbFirstSide, numbSecondSide, numbThirdSide);
-                }
-                else
-                    cout << "The triangle doesn't exist." << endl;
-                return 0;
-            }
+        if (triangleExist(numbFirstSide, numbSecondSide, numbThirdSide)) {
+            printTypeTriangle(numbFirstSide, numbSecondSide, numbThirdSide);
         }
+        else
+            cout << "The triangle doesn't exist." << endl;
+        return 0;
     }
 	return 1;
 }
