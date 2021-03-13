@@ -14,4 +14,5 @@
 - [Guess Number](https://github.com/rkaznouski/Base_4/blob/master/GuessNumber/GuessNumber.cpp) - chooses a number from 1 to 1000 and user tries to guess it. User receives hints about number.
 
 #### [ 12.03.2021 ]
-- [Exponentiation]() - raises a number to the degree. Number and degree user enters from the keyboard.
+- [Exponentiation](https://github.com/rkaznouski/Base_4/blob/master/Exponentiation/Exponentiation.cpp) - raises a number to the degree. Number and degree user enters from the keyboard.
+- [BinaryOnlyOnes](https://github.com/rkaznouski/Base_4/blob/master/BinaryOnlyOnes/BinaryOnlyOnes.cpp) - finds and prints numbers in a sequence consisting only of ones.
