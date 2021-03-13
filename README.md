@@ -15,4 +15,5 @@
 
 #### [ 12.03.2021 ]
 - [Exponentiation](https://github.com/rkaznouski/Base_4/blob/master/Exponentiation/Exponentiation.cpp) - raises a number to the degree. Number and degree user enters from the keyboard.
-- [BinaryOnlyOnes](https://github.com/rkaznouski/Base_4/blob/master/BinaryOnlyOnes/BinaryOnlyOnes.cpp) - finds and prints numbers in a sequence consisting only of ones.
+- [Binary Only Ones](https://github.com/rkaznouski/Base_4/blob/master/BinaryOnlyOnes/BinaryOnlyOnes.cpp) - finds and prints numbers in a sequence consisting only of ones.
+- [Fibonacci Number](https://github.com/rkaznouski/Base_4/blob/master/FibonacciNumber/FibonacciNumber.cpp) - finds and print number in row of Fibonacci.
