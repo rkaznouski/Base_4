@@ -12,3 +12,6 @@
 - [Triangles](https://github.com/rkaznouski/Base_4/blob/master/Triangles/Triangles.cpp) - user enters three numbers. App defines the type of triangle.
 - [First Digit](https://github.com/rkaznouski/Base_4/blob/master/FirstDigit/FirstDigit.cpp) - finds and sends the first digit of the fractional part of number to the output stream.
 - [Guess Number](https://github.com/rkaznouski/Base_4/blob/master/GuessNumber/GuessNumber.cpp) - chooses a number from 1 to 1000 and user tries to guess it. User receives hints about number.
+
+#### [ 12.03.2021 ]
+- [Exponentiation]() - raises a number to the degree. Number and degree user enters from the keyboard.
