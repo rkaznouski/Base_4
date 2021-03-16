@@ -17,3 +17,7 @@
 - [Exponentiation](https://github.com/rkaznouski/Base_4/blob/master/Exponentiation/Exponentiation.cpp) - raises a number to the degree. Number and degree user enters from the keyboard.
 - [Binary Only Ones](https://github.com/rkaznouski/Base_4/blob/master/BinaryOnlyOnes/BinaryOnlyOnes.cpp) - finds and prints numbers in a sequence consisting only of ones.
 - [Fibonacci Number](https://github.com/rkaznouski/Base_4/blob/master/FibonacciNumber/FibonacciNumber.cpp) - finds and prints number in row of Fibonacci.
+
+#### [ 16.03.2021 ]
+- [Fate Number](https://github.com/rkaznouski/Base_4/blob/master/NumberFate/NumberFate.cpp) - finds and prints the fate number.
+- [Invert Number](https://github.com/rkaznouski/Base_4/blob/master/NumberInvert/NumberInvert.cpp) - performs and prints number inversion.
