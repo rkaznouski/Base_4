@@ -20,4 +20,4 @@
 
 #### [ 16.03.2021 ]
 - [Fate Number](https://github.com/rkaznouski/Base_4/blob/master/NumberFate/NumberFate.cpp) - finds and prints the fate number.
-- [Invert Number](https://github.com/rkaznouski/Base_4/blob/master/NumberInvert/NumberInvert.cpp) - performs number inversion and prints number.
+- [Invert Number](https://github.com/rkaznouski/Base_4/blob/master/NumberInvert/NumberInvert.cpp) - performs and prints number inversion.
