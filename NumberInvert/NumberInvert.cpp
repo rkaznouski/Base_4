@@ -16,11 +16,11 @@ int main() {
 		return 1;
 	}
 	else if (userNumber < 10) {
-		cout << "ERROR. One digit not invert." << endl;
+		cout << "ERROR. One digit cannot be inverted." << endl;
 		return 1;
 	}
 	else {
-		cout << "Invert of your number is: ";
+		cout << "Invertion of your number is: ";
 		cout << getInvertNumber(userNumber, getFactor(userNumber)) << endl;
 		return 0;
 	}
