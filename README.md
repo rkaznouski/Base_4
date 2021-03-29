@@ -23,4 +23,4 @@
 - [Invert Number](https://github.com/rkaznouski/Base_4/blob/master/NumberInvert/NumberInvert.cpp) - performs and prints number inversion.
 
 #### [ 18.03.2021 ]
-- [Coffee Box](https://github.com/rkaznouski/Base_4/blob/master/CoffeeBox/CoffeeBox.cpp) - Espresso Biancci has been ordered the development of a menu management system for its LEI700 coffee machine. The device prepares three types of coffee: Espresso, Cappuccino, Latte.
+- [Coffee Box](https://github.com/rkaznouski/Base_4/blob/master/CoffeeBox/CoffeeBox.cpp) - Espresso Biancci has been ordered the development of a menu management system for its LEI700 coffee machine. The device cookes three types of coffee: Espresso, Cappuccino, Latte.
