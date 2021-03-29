@@ -420,13 +420,18 @@ void takeMoney(serviceData& variableValues) {
 
 void refillCups(serviceData& variableValues) {
     double numberOfCups = 0;
-
+    
     clearDisplay();
     changeColour(11);
     cout << "Cups remaining: " << variableValues.cups << endl;
     cout << "Max number of cups: " << MAX_CUPS << endl << endl;
-    
-    variableValues.cups += MAX_CUPS - variableValues.cups;
+    cout << "Refill number of cups by: ";
+
+    numberOfCups = inputUserNumber(numberOfCups);
+
+    if (isInputValueCorrect(numberOfCups, 0, MAX_CUPS - variableValues.cups)) {
+        variableValues.cups += numberOfCups;
+    }
 }
 
 void changeColour(int colour) {
